@@ -1,5 +1,7 @@
 This repo contains a hacked-together Emacs package that depends on Clojure mode being installed.
-It will hopefully be rewritten and put into one of the package managers eventually. Any contributions are most welcome!
+It will hopefully be rewritten and put into one of the package managers eventually.
+
+Any contributions are most welcome!
 
 ## Configuration
 
@@ -11,7 +13,8 @@ Add this to your configuration file:
 (require 'carp-mode)
 (require 'inf-carp-mode)
 
-(add-to-list 'auto-mode-alist '("\\.carp\\'" . carp-mode)) ;; Use carp-mode for .carp files
+;; Use carp-mode for .carp files
+(add-to-list 'auto-mode-alist '("\\.carp\\'" . carp-mode))
 ```
 
 To start an interactive session, make sure `carp` is in your path (inside Emacs) and execute `M-x run-carp`.
