@@ -5,7 +5,7 @@
 
 (defvar-local carp--flymake-proc nil
   "Variable storing the currently active flymake process running the carp checker.
-This is used to determin if the current diagnostics are out of date.")
+This is used to determine if the current diagnostics are out of date.")
 
 ;;;###autoload
 (defun carp-flymake (report-fn &rest _args)

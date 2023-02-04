@@ -39,9 +39,10 @@ party dependency.
 ```
 (require 'carp-flymake)
 
-(add-hook 'carp-mode-hook 'carp-setup-flymake-backend)
+(add-hook 'carp-mode-hook (lambda ()
+	(carp-setup-flymake-backend)
+	(flymake-mode 1)))
 ```
-
 
 
 ## License
