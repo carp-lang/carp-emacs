@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 
 (define-derived-mode carp-mode clojure-mode "Carp"
   "Major mode for the Carp programming language.")
