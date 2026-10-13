@@ -31,7 +31,19 @@ This minor mode is highly recommended -- Carp's type errors are much easier to u
             (flycheck-mode 1)))
 ```
 
+## Goto Definition (Xref)
 
+Using Carp's Repl with Emacs's Xref you can jump to the definition of
+variables and functions. Simply add the following config to register
+it when working in a carp file
+
+```
+(require 'carp-xref)
+
+(add-hook 'carp-mode-hook
+	(lambda ()
+		(push 'carp-xref-backend xref-backend-functions)))
+```
 
 ## License
 
