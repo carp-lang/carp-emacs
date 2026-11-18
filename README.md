@@ -31,6 +31,18 @@ This minor mode is highly recommended -- Carp's type errors are much easier to u
             (flycheck-mode 1)))
 ```
 
+## Flymake
+
+as an alternative to using Flycheck this uses Flymake removing the 3rd
+party dependency.
+
+```
+(require 'carp-flymake)
+
+(add-hook 'carp-mode-hook (lambda ()
+	(carp-setup-flymake-backend)
+	(flymake-mode 1)))
+```
 
 
 ## License
